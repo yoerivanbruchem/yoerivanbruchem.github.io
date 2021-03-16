@@ -1,0 +1,62 @@
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        {% for item in site.data.navbar %}
+        <a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
+        {% endfor %}  
+      </div>
+    </div>
+  </nav> -->
+
+  <div class="header">
+    <div class="menu">
+        <ul>
+          {% for item in site.data.navbar %}
+        <li><a class="" href="{{item.link}}">{{ item.name }}</a></li>
+        {% endfor %}  
+            <!--<li> Home </li>
+            <li> Projects </li>
+            <li> Articles </li>
+            <li> About me </li>
+            <li class="last"> Contact </li> -->
+        </ul>
+    </div>
+  </div>
+
+
+  <div class="sticky_header header test" id="site_header">
+    <div class="menu">
+        <ul>
+          {% for item in site.data.navbar %}
+          <li><a class="" href="{{item.link}}">{{ item.name }}</a></li>
+          {% endfor %} 
+        </ul>
+    </div>
+  </div>
+
+  <script>
+   
+   // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("site_header");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop + 600;
+    console.log(sticky)
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+      
+  </script>

@@ -12,9 +12,14 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico ">
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/3367b8463b.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Logo</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -30,7 +35,64 @@
           
       </div>
     </div>
-  </nav>  
+  </nav> -->
+
+  <div class="header">
+    <div class="menu">
+        <ul>
+          
+        <li><a class="" href="/">Home</a></li>
+        
+        <li><a class="" href="/about">About</a></li>
+        
+        <li><a class="" href="/projects">Projects</a></li>
+          
+            <!--<li> Home </li>
+            <li> Projects </li>
+            <li> Articles </li>
+            <li> About me </li>
+            <li class="last"> Contact </li> -->
+        </ul>
+    </div>
+  </div>
+
+
+  <div class="sticky_header header test" id="site_header">
+    <div class="menu">
+        <ul>
+          
+          <li><a class="" href="/">Home</a></li>
+          
+          <li><a class="" href="/about">About</a></li>
+          
+          <li><a class="" href="/projects">Projects</a></li>
+           
+        </ul>
+    </div>
+  </div>
+
+  <script>
+   
+   // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("site_header");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop + 600;
+    console.log(sticky)
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+    } else {
+        header.classList.remove("sticky");
+    }
+    }
+      
+  </script>  
     <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
