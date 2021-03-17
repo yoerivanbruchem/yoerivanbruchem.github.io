@@ -13,17 +13,24 @@
   </nav> -->
 
 <div class="header">
-  <div class="menu">
-    <ul>
-      {% for item in site.data.navbar %}
-      {% unless item.name == site.data.navbar.last.name %}
-      <li><a href="{{item.link}}">{{ item.name }}</a></li>
-      {% else %}
-      <li class="last"><a href="{{item.link}}">{{ item.name }}</a></li>
-      {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
+  <nav class="menu navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        {% for item in site.data.navbar %}
+        {% unless item.name == site.data.navbar.last.name %}
+        <li class="nav-item"><a href="{{item.link}}">{{ item.name }}</a></li>
+        {% else %}
+        <li class="nav-item last"><a href="{{item.link}}">{{ item.name }}</a></li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+    
+  </nav>
 </div>
 
 

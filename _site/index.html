@@ -15,6 +15,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3367b8463b.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <body>
 
@@ -38,23 +42,30 @@
   </nav> -->
 
 <div class="header">
-  <div class="menu">
-    <ul>
-      
-      
-      <li><a href="/">Home</a></li>
-      
-      
-      
-      <li><a href="/about">About</a></li>
-      
-      
-      
-      <li class="last"><a href="/projects">Projects</a></li>
-      
-      
-    </ul>
-  </div>
+  <nav class="menu navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        
+        
+        <li class="nav-item"><a href="/">Home</a></li>
+        
+        
+        
+        <li class="nav-item"><a href="/about">About</a></li>
+        
+        
+        
+        <li class="nav-item last"><a href="/projects">Projects</a></li>
+        
+        
+      </ul>
+    </div>
+    
+  </nav>
 </div>
 
 
