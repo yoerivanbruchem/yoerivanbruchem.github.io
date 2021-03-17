@@ -12,51 +12,54 @@
     </div>
   </nav> -->
 
-  <div class="header">
-    <div class="menu">
-        <ul>
-          {% for item in site.data.navbar %}
-        <li><a class="" href="{{item.link}}">{{ item.name }}</a></li>
-        {% endfor %}  
-            <!--<li> Home </li>
-            <li> Projects </li>
-            <li> Articles </li>
-            <li> About me </li>
-            <li class="last"> Contact </li> -->
-        </ul>
-    </div>
+<div class="header">
+  <div class="menu">
+    <ul>
+      {% for item in site.data.navbar %}
+      {% unless item.name == site.data.navbar.last.name %}
+      <li><a href="{{item.link}}">{{ item.name }}</a></li>
+      {% else %}
+      <li class="last"><a href="{{item.link}}">{{ item.name }}</a></li>
+      {% endunless %}
+      {% endfor %}
+    </ul>
   </div>
+</div>
 
 
-  <div class="sticky_header header test" id="site_header">
-    <div class="menu">
-        <ul>
-          {% for item in site.data.navbar %}
-          <li><a class="" href="{{item.link}}">{{ item.name }}</a></li>
-          {% endfor %} 
-        </ul>
-    </div>
+<div class="sticky_header header test" id="site_header">
+  <div class="menu">
+    <ul>
+      {% for item in site.data.navbar %}
+      {% unless item.name == site.data.navbar.last.name %}
+      <li><a href="{{item.link}}">{{ item.name }}</a></li>
+      {% else %}
+      <li class="last"><a href="{{item.link}}">{{ item.name }}</a></li>
+      {% endunless %}
+      {% endfor %}
+    </ul>
   </div>
+</div>
 
-  <script>
-   
-   // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
+<script>
 
-    // Get the header
-    var header = document.getElementById("site_header");
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () { myFunction() };
 
-    // Get the offset position of the navbar
-    var sticky = header.offsetTop + 600;
-    console.log(sticky)
+  // Get the header
+  var header = document.getElementById("site_header");
 
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop + 600;
+  console.log(sticky)
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
     if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+      header.classList.add("sticky");
     } else {
-        header.classList.remove("sticky");
+      header.classList.remove("sticky");
     }
-    }
-      
-  </script>
+  }
+
+</script>

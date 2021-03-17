@@ -37,193 +37,245 @@
     </div>
   </nav> -->
 
-  <div class="header">
-    <div class="menu">
-        <ul>
-          
-        <li><a class="" href="/">Home</a></li>
-        
-        <li><a class="" href="/about">About</a></li>
-        
-        <li><a class="" href="/projects">Projects</a></li>
-          
-            <!--<li> Home </li>
-            <li> Projects </li>
-            <li> Articles </li>
-            <li> About me </li>
-            <li class="last"> Contact </li> -->
-        </ul>
-    </div>
-  </div>
-
-
-  <div class="sticky_header header test" id="site_header">
-    <div class="menu">
-        <ul>
-          
-          <li><a class="" href="/">Home</a></li>
-          
-          <li><a class="" href="/about">About</a></li>
-          
-          <li><a class="" href="/projects">Projects</a></li>
-           
-        </ul>
-    </div>
-  </div>
-
-  <script>
-   
-   // When the user scrolls the page, execute myFunction
-    window.onscroll = function() {myFunction()};
-
-    // Get the header
-    var header = document.getElementById("site_header");
-
-    // Get the offset position of the navbar
-    var sticky = header.offsetTop + 600;
-    console.log(sticky)
-
-    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-    if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
-    } else {
-        header.classList.remove("sticky");
-    }
-    }
+<div class="header">
+  <div class="menu">
+    <ul>
       
-  </script>  
-    <!--<header class="header-main" syle="background-image:url('/assets/img/ny.jpg')">
+      
+      <li><a href="/">Home</a></li>
+      
+      
+      
+      <li><a href="/about">About</a></li>
+      
+      
+      
+      <li class="last"><a href="/projects">Projects</a></li>
+      
+      
+    </ul>
+  </div>
+</div>
 
-    <div class="overlay-light"></div>
-    <div class="home-title">
-        <h1> Yoeri van Bruchem </h1>
-        <h3> Data Scientist </h3>
-    </div>
 
-        <a href="#blurb" class="home-avatar"></a>
-    
+<div class="sticky_header header test" id="site_header">
+  <div class="menu">
+    <ul>
+      
+      
+      <li><a href="/">Home</a></li>
+      
+      
+      
+      <li><a href="/about">About</a></li>
+      
+      
+      
+      <li class="last"><a href="/projects">Projects</a></li>
+      
+      
+    </ul>
+  </div>
+</div>
 
-    
+<script>
 
-</header>-->
+  // When the user scrolls the page, execute myFunction
+  window.onscroll = function () { myFunction() };
 
-<div class="content container ">
+  // Get the header
+  var header = document.getElementById("site_header");
 
-    <div class="section first_section">
+  // Get the offset position of the navbar
+  var sticky = header.offsetTop + 600;
+  console.log(sticky)
+
+  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+</script>  
+    <div class="content">
+
+    <div class="section first_section container">
         <div class="row section_content main_title">
 
-                <div class="col-lg-6">
-                    <img src="/assets/img/ny.jpg" alt=""/>
-                </div>
-                
-                <div class="col-lg-6">
-                    <div class="main_title_text">
-                    
-                        <h1> Yoeri van Bruchem</h1>
-                        <h4> Data Scientist </h4>
-                        <p>My name is Yoeri van Bruchem, student Business IT & Management at the University of Applied Sciences, Arnhem and Nijmegen.
-        
-                            The amount of available data in our society is increasing rapidly. Because of this data, organizations are able to make more accurate decisions and predictions than ever before.
-                            However, not only businesses can take advantage of these great sources of knowledge. 
-                        </p>
-        
-                        
-                        <div class="main_title_urls">
-                            <i class="fab fa-linkedin"></i>
-                            <i class="fab fa-instagram-square"></i>
-                            <i class="fas fa-envelope-square"></i>
-                        </div>
-        
-        
+            <div class="col-lg-6">
+                <img src="/assets/img/ny.jpg" alt="" />
+            </div>
+
+            <div class="col-lg-6">
+                <div class="main_title_text">
+
+                    <h1> Yoeri van Bruchem</h1>
+                    <h4> Data Scientist </h4>
+                    <p>My name is Yoeri van Bruchem, student Business IT & Management at the University of Applied
+                        Sciences, Arnhem and Nijmegen.
+
+                        The amount of available data in our society is increasing rapidly. Because of this data,
+                        organizations are able to make more accurate decisions and predictions than ever before.
+                        However, not only businesses can take advantage of these great sources of knowledge.
+                    </p>
+
+
+                    <div class="main_title_urls">
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-instagram-square"></i>
+                        <i class="fas fa-envelope-square"></i>
                     </div>
+
+
                 </div>
-                
-    
-    
-           
+            </div>
+
+
+            <script>
+
+                // When the user scrolls the page, execute myFunction
+                window.onscroll = function () { myFunction() };
+
+                // Get the header
+                var header = document.getElementById("site_header");
+
+                // Get the offset position of the navbar
+                var sticky = header.offsetTop + 600;
+                console.log(sticky)
+
+                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+                function myFunction() {
+                    if (window.pageYOffset > sticky) {
+                        header.classList.add("sticky");
+                    } else {
+                        header.classList.remove("sticky");
+                    }
+                }
+
+            </script>
+
 
         </div>
     </div>
 
-    <div class="section">
+    <div class="section content_divider container-fluid "></div>
+
+    <div id="projects" class="section container">
         <div class="row no-gutters">
 
             <div class="col-sm-12">
                 <h2> Projects </h2>
+                <div class="title_divider"></div>
                 <p class="section_introduction">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec
+                    quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.
+                    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
                 </p>
             </div>
-            
 
-            <div class="box col-sm-12 m-4">
-                <div class="article_preview"> <img src="/assets/img/ny.jpg" alt=""/> 
+
+            <div class="box col-sm-12 my-4">
+                <div class="article_preview"> <img src="/assets/img/ny.jpg" alt="" />
                     <div class="box_content">
                         <h3> Machine Learning with Tensorflow</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
-                        </p>                    
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+                            pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                            vulputate eleifend tellus.
+                        </p>
                         <div class="article_information">
                             <div class="article_urls">
                                 <i class="fab fa-github-square"></i>
                                 <i class="fab fa-docker"></i>
                                 <i class="fab fa-python"></i>
                             </div>
-                            <div class="article_type"> <p>Project</p></div>
+                            <div class="article_type">
+                                <p>Project</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="box col-sm-12 m-4">
-                <div class="article_preview"> <img src="/assets/img/ny.jpg" alt=""/> 
+            <div class="box col-sm-12 my-4">
+                <div class="article_preview"> <img src="/assets/img/ny.jpg" alt="" />
                     <div class="box_content">
                         <h3> Exploratory Data Analysis (EDA) </h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
-                        </p>                    
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
+                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+                            pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
+                            vulputate eleifend tellus.
+                        </p>
                         <div class="article_information">
                             <div class="article_urls">
                                 <i class="fab fa-github-square"></i>
                                 <i class="fab fa-docker"></i>
                                 <i class="fab fa-python"></i>
                             </div>
-                            <div class="article_type"> <p>Article</p></div>
+                            <div class="article_type">
+                                <p>Article</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <div class="space"></div>
 
             <div class="box button">
                 <p>Browse more projects...</p>
             </div>
 
+            <div class="space"></div>
+
         </div>
+
+        <div class="divider"></div>
 
     </div>
 
-    <div class="section">
-        
-        
-        
+    <div id="concepts" class="section container">
+
+
+
         <div class="section_content">
             <div class="row">
                 <div class="col-sm-12">
                     <h2> Concepts </h2>
+                    <div class="title_divider"></div>
                     <p class="section_introduction">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                        tellus.
                     </p>
                 </div>
             </div>
-            
+
             <div class="row is-flex">
                 <div class="col-lg-4 p-4">
                     <div class="box concept_item">
                         <i class="fas fa-chart-area"></i>
                         <h3> EDA </h3>
                         <p> Data exploration </p>
-                        
+
                     </div>
 
                 </div>
@@ -233,7 +285,7 @@
                         <i class="fas fa-microscope"></i>
                         <h3> ML </h3>
                         <p> Machine Learning Projects </p>
-                        
+
                     </div>
                 </div>
 
@@ -242,18 +294,81 @@
                         <i class="fas fa-dumbbell"></i>
                         <h3> Training </h3>
                         <p> Train the model </p>
-                        
+
                     </div>
                 </div>
             </div>
-            
 
 
-            
-    
-            
-    
-            
+        </div>
+    </div>
+
+
+
+    <div id="dataviz" class="section container">
+
+
+
+        <div class="section_content">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2> Data Visualization </h2>
+                    <div class="title_divider"></div>
+                    <p class="section_introduction">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo,
+                        rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.
+                        Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend
+                        tellus.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row is-flex">
+                <div class="col-lg-6 p-4">
+                    <div class="box concept_item">
+                        <i class="fas fa-chart-area"></i>
+                        <h3> EDA </h3>
+                        <p> Data exploration </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 p-4">
+                    <div class="box concept_item">
+                        <i class="fas fa-microscope"></i>
+                        <h3> ML </h3>
+                        <p> Machine Learning Projects </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 p-4">
+                    <div class="box concept_item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3> Training </h3>
+                        <p> Train the model </p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 p-4">
+                    <div class="box concept_item">
+                        <i class="fas fa-dumbbell"></i>
+                        <h3> Training </h3>
+                        <p> Train the model </p>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
 
         </div>
     </div>
@@ -265,14 +380,14 @@
 
 
 
-    
 
 
 
-    
 
 
-    
+
+
+
 
 
 
