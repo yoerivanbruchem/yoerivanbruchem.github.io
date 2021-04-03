@@ -43,12 +43,13 @@
 
 <div class="header">
   <nav class="menu navbar navbar-expand-lg">
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="nav justify-content-center">
         
         
         <li class="nav-item"><a href="/">Home</a></li>
@@ -117,7 +118,7 @@
         <div class="row section_content main_title">
 
             <div class="col-lg-6">
-                <img src="/assets/img/ny.jpg" alt="" />
+                <img src="/assets/img/profile_image.png" alt="" />
             </div>
 
             <div class="col-lg-6">
@@ -145,34 +146,39 @@
             </div>
 
 
-            <script>
-
-                // When the user scrolls the page, execute myFunction
-                window.onscroll = function () { myFunction() };
-
-                // Get the header
-                var header = document.getElementById("site_header");
-
-                // Get the offset position of the navbar
-                var sticky = header.offsetTop + 600;
-                console.log(sticky)
-
-                // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-                function myFunction() {
-                    if (window.pageYOffset > sticky) {
-                        header.classList.add("sticky");
-                    } else {
-                        header.classList.remove("sticky");
-                    }
-                }
-
-            </script>
+            
 
 
         </div>
     </div>
 
-    <div class="section content_divider container-fluid "></div>
+    <div class="section content_divider container-fluid ">
+        <div class="row w-100" style="position:relative;">
+            <!-- TODO: ADD CSS to stylesheet -->
+            
+            
+            
+            
+            <a class="ca3-scroll-down-link ca3-scroll-down-arrow" data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#projects"></a>
+            
+            <a style="cursor:pointer">
+                <div style="position: absolute; right:0;margin:10px; bottom:0;">
+                    <p style="color: white; float: left; padding-right:10px; "> Find me on Medium  </p> <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" style="fill:white; float:left;"><path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.237 4.999-5 5zm.97-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z"/></svg>
+                </div>
+            </a>
+            
+
+            <div style="position: absolute; left:0;margin:10px; bottom:0;">
+                <p style="color: white; float: left; padding-right:10px; font-size: 12px"> &#169 2020 - 2021 Yoeri van Bruchem  </p> 
+            </div>
+
+        </div>
+
+        
+
+
+        
+    </div>
 
     <div id="projects" class="section container">
         <div class="row no-gutters">
