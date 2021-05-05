@@ -33,6 +33,7 @@ body{
     font-family: 'Roboto Slab', serif;
     background: linear-gradient(180deg, #ffffff, #e2e1e2);
     color: rgb(51, 51, 51);
+    min-height: 100vh;
     /*-ms-overflow-style: none;  
     scrollbar-width: none;  */
 }
@@ -385,7 +386,9 @@ p{
     cursor:pointer;
 	height: 60px;
 	width: 80px;
-	margin: auto;
+	margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
 	color: #FFF;
 	text-align: center;
 	font-size: 70px;

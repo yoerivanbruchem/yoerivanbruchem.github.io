@@ -6,7 +6,7 @@ layout: default
 
     <div class="section first_section container">
         <div class="row section_content main_title">
-
+            
             <div class="col-lg-6">
                 <img src="{{ site.baseurl }}/assets/img/profile_image.png" alt="" />
             </div>
@@ -82,60 +82,32 @@ layout: default
                 </p>
             </div>
 
-
-            <div class="box col-sm-12 my-4">
-                <div class="article_preview"> <img src="{{ site.baseurl }}/assets/img/ny.jpg" alt="" />
-                    <div class="box_content">
-                        <h3> Machine Learning with Tensorflow</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                            pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                            vulputate eleifend tellus.
-                        </p>
-                        <div class="article_information">
-                            <div class="article_urls">
-                                <i class="fab fa-github-square"></i>
-                                <i class="fab fa-docker"></i>
-                                <i class="fab fa-python"></i>
+            {% for post in site.posts %}
+            <!--<a href="{{ post.url }}" > -->
+                <div class="box col-sm-12 my-4">
+                    <div class="article_preview"> 
+                        <a href="{{ post.url }}">
+                            <img src="{{ site.baseurl }}{{ post.image }}" alt="" />
+                            <div class="box_content">
+                                <h3> {{ post.title }} </h3>
+                                {{ post.excerpt }}
+                                <div class="article_information">
+                                    <div class="article_urls">
+                                        <i class="fab fa-github-square"></i>
+                                        <i class="fab fa-docker"></i>
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="article_type">
+                                        <p> {{ post.type }} </p>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="article_type">
-                                <p>Project</p>
-                            </div>
-                        </div>
+                        </a>
+                        
                     </div>
                 </div>
-            </div>
-
-            <div class="box col-sm-12 my-4">
-                <div class="article_preview"> <img src="{{ site.baseurl }}/assets/img/ny.jpg" alt="" />
-                    <div class="box_content">
-                        <h3> Exploratory Data Analysis (EDA) </h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
-                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
-                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
-                            consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget,
-                            arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
-                            pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean
-                            vulputate eleifend tellus.
-                        </p>
-                        <div class="article_information">
-                            <div class="article_urls">
-                                <i class="fab fa-github-square"></i>
-                                <i class="fab fa-docker"></i>
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="article_type">
-                                <p>Article</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <!--</a>-->
+            {% endfor %}
 
             <div class="space"></div>
 
