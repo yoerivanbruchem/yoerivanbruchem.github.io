@@ -23,7 +23,7 @@ email: yoeriv@nbruchem.nl
 description: >- # this means to ignore newlines until "baseurl:"
   Yoeri van Bruchem is a freelance Data Scientist who has been working professionally since 2020.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://yoerivanbruchem.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.yoerivanbruchem.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yoerivanbruchem
 github_username:  yoerivanbruchem
 
