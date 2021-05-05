@@ -1,11 +1,14 @@
 ---
 layout: md-page
 image: "/assets/img/ny.jpg"
+title: Machine Learning with Tensorflow
+author: Yoeri van Bruchem
+author-image: "/assets/img/profile.jpg"
 ---
 
-# Hello World!
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet purus gravida quis blandit turpis cursus in hac habitasse. Sit amet massa vitae tortor condimentum lacinia quis vel eros. Duis ut diam quam nulla porttitor. Ullamcorper a lacus vestibulum sed arcu non odio euismod lacinia. Enim facilisis gravida neque convallis a cras. Consectetur purus ut faucibus pulvinar elementum. In iaculis nunc sed augue lacus viverra vitae congue eu. Leo vel fringilla est ullamcorper eget nulla facilisi etiam. Lacinia quis vel eros donec ac. Netus et malesuada fames ac turpis egestas maecenas pharetra. Lacus sed turpis tincidunt id aliquet risus feugiat in ante. Lorem ipsum dolor sit amet consectetur adipiscing elit. Hendrerit gravida rutrum quisque non tellus. Tellus orci ac auctor augue mauris augue neque gravida in.
 
+## Subtitle
 Vel quam elementum pulvinar etiam non quam lacus suspendisse. Euismod in pellentesque massa placerat duis ultricies lacus sed. Malesuada proin libero nunc consequat interdum varius sit. Sit amet luctus venenatis lectus magna fringilla urna porttitor. Elementum nibh tellus molestie nunc non blandit. Sed adipiscing diam donec adipiscing. Laoreet non curabitur gravida arcu. Rutrum tellus pellentesque eu tincidunt. Urna nec tincidunt praesent semper feugiat. Urna cursus eget nunc scelerisque viverra mauris in aliquam. Amet purus gravida quis blandit turpis cursus. Congue eu consequat ac felis donec. Mi quis hendrerit dolor magna eget est lorem ipsum. Ligula ullamcorper malesuada proin libero. Netus et malesuada fames ac turpis egestas. Tristique sollicitudin nibh sit amet. Facilisis mauris sit amet massa vitae tortor.
 
 Nulla facilisi morbi tempus iaculis urna id volutpat. Pharetra pharetra massa massa ultricies mi quis. Platea dictumst quisque sagittis purus. Eleifend donec pretium vulputate sapien. Quis lectus nulla at volutpat diam ut. Massa vitae tortor condimentum lacinia. Id cursus metus aliquam eleifend mi in. Quis varius quam quisque id diam vel quam elementum. Varius duis at consectetur lorem donec massa sapien. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Id velit ut tortor pretium viverra suspendisse potenti.
