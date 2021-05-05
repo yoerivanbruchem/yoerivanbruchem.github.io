@@ -1,7 +1,7 @@
 ---
 layout: md-page
 image: "/assets/img/ny.jpg"
-title: Machine Learning with Tensorflow
+title: About
 author: Yoeri van Bruchem
 author-image: "/assets/img/profile.jpg"
 ---
