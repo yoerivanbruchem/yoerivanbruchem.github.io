@@ -36,11 +36,13 @@
               <div class="social"> 
                 <a href="mailto:?subject=I wanted you to see this site&amp;body=Check out this blog http://www.website.com." title="Share by Email"> <i class="fab fa-linkedin"></i> </a>
                 <a> <i class="fab fa-instagram-square"></i> </a>
-                <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i> </a>
+                <a href="https://www.facebook.com/sharer.php?u={{ site.url }}/{{ page.url }}" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope-square"></i> </a>
               </div>
 
             </div>
-            
+
+            Base URL {{ site.baseurl }}
+            URL {{ site.url }}
 
 
             {{ content }}
