@@ -1,7 +1,17 @@
 @import "color-scheme";
 
+.box:hover{
+    cursor:unset;
+}
+
 #md_page{
     margin-top: -40px;
+}
+
+.section h2 {
+    text-align: left;
+    margin-bottom: 5px;
+    padding-top: 15px;
 }
 
 .page_image{
@@ -16,6 +26,7 @@
 }
 
 .page_title{
+    font-size: 20px;
     margin-bottom: 10px;
 }
 
@@ -62,9 +73,13 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
     .page_content{
-        padding: 50px 100px;
+        padding: 50px 100px 80px 100px;
     }
-    
+
+    .page_title{
+        font-size: 30px;
+    }
+
     .page_info .social{
         display: block;
     }
@@ -79,5 +94,13 @@
 .page_info .social i:hover{
     cursor: pointer;
     color: $base-color2;
+}
+
+.copyright{
+    color: $text-color-subtle1;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    padding-top: 10px;
 }
 
