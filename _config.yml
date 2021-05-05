@@ -35,17 +35,15 @@ twitter_path: https://twitter.com/yoerivanbruchem
 permalink: pretty
 markdown: kramdown
 
-gems:
-  - jekyll-feed
-  - jekyll-autoprefixer
-
 plugins:
   - jekyll-feed
+  - jekyll-autoprefixer
 
 sass:
   sass_dir: _sass
   style: compressed
 
+page_excerpts: true
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

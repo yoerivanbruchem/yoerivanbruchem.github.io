@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/page.css">
+</head>
+
+<body>
+
+
+  {% include header.html %}
+
+  <div class="content md_page">
+
+    <div class="section first_section container">
+      <div class="row section_content no-gutters">
+
+
+        <div class="box col-sm-12 my-4">
+          <img class="page_image" src="{{ site.baseurl }}{{page.image}}" alt="" />
+          
+          <div class="page_content">
+            {{ content }}
+          </div>
+          
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  {% include js-link.html %}
+
+  <!-- This is a Markdown page. -->
+
+</body>
+
+</html>
