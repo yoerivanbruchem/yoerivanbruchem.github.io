@@ -14,39 +14,138 @@
 
 <div class="header">
   <nav class="menu navbar navbar-expand-lg">
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+
+
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+      <a class="navbar-brand" href="#">Yoeri van Bruchem</a>
+
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>-->
+
       <ul class="nav justify-content-center">
         {% for item in site.data.navbar %}
         {% unless item.name == site.data.navbar.last.name %}
         <li class="nav-item"><a href="{{item.link}}">{{ item.name }}</a></li>
         {% else %}
-        <li class="nav-item last"><a href="{{item.link}}">{{ item.name }}</a></li>
+        <li class="nav-item last dropdown-toggle"><a href="{{item.link}}">{{ item.name }}</a>
+          <ul class="dropdown-menu">
+
+            <div class="dropdown-menu-content">
+
+              <span><i class="fas fa-project-diagram"></i> <h5> Project Types </h5></span> 
+              <span><p>Navigate to different project types.</p></span>
+
+              <table>
+
+                <tr> <th>Category 1</th> <th>Category 2</th> </tr>
+
+                <tr>
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 1</a></li> </td>
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 2 </a></li></td>
+                </tr>
+                <tr>  
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 3 </a></li></td>
+                </tr>
+
+              </table>
+
+
+
+              
+              
+            </div>
+
+            <div class="dropdown-footer"> 
+              <span>
+                <i class="fab fa-github"></i> <a href=https://github.com><p> Checkout my Github account </p></a>  </div>
+              </span>
+
+
+          </ul>
+        </li>
         {% endunless %}
         {% endfor %}
       </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
     </div>
-    
+
   </nav>
 </div>
 
 
 <div class="sticky_header header test" id="site_header">
-  <div class="menu">
-    <ul>
-      {% for item in site.data.navbar %}
-      {% unless item.name == site.data.navbar.last.name %}
-      <li><a href="{{item.link}}">{{ item.name }}</a></li>
-      {% else %}
-      <li class="last"><a href="{{item.link}}">{{ item.name }}</a></li>
-      {% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
+  <nav class="menu navbar navbar-expand-lg">
+    
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+      <a class="navbar-brand" href="#">Yoeri van Bruchem</a>
+
+      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>-->
+
+      <ul class="nav justify-content-center">
+        {% for item in site.data.navbar %}
+        {% unless item.name == site.data.navbar.last.name %}
+        <li class="nav-item"><a href="{{item.link}}">{{ item.name }}</a></li>
+        {% else %}
+        <li class="nav-item last dropdown-toggle"><a href="{{item.link}}">{{ item.name }}</a>
+          <ul class="dropdown-menu">
+
+            <div class="dropdown-menu-content">
+
+              <span><i class="fas fa-project-diagram"></i> <h5> Project Types </h5></span> 
+              <span><p>Navigate to different project types.</p></span>
+
+              <table>
+
+                <tr> <th>Category 1</th> <th>Category 2</th> </tr>
+
+                <tr>
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 1</a></li> </td>
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 2 </a></li></td>
+                </tr>
+                <tr>  
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 3 </a></li></td>
+                </tr>
+
+              </table>
+
+
+
+              
+              
+            </div>
+
+            <div class="dropdown-footer"> 
+              <span>
+                <i class="fab fa-github"></i> <a href=https://github.com><p> Checkout my Github account </p></a>  </div>
+              </span>
+
+
+          </ul>
+        </li>
+        {% endunless %}
+        {% endfor %}
+      </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+
+    </div>
+
+
+  </nav>
 </div>
 
 <script>
@@ -64,6 +163,7 @@
   // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
     if (window.pageYOffset > sticky) {
+      //if (document.documentElement.scrollTop > sticky) {
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");
