@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+
+<head>
+  {% include head.html %}
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/assets/css/page.css">
+  <title>{{ site.title }} | {{page.title}} </title>
+  <!--<meta name="description" content="Page description. No longer than 155 characters." />-->
+  <meta name="description" content="{{ site.description }}">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    {% include header.html %}
+
+    <div class="content md_page">
+
+      <div class="section container">
+        <div class="row section_content no-gutters">
+
+
+          <div class="box col-sm-12 my-4">
+
+            {{ content }}
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+  {% include js-link.html %}
+
+
+
+</body>
+
+</html>
