@@ -1,2 +1,6 @@
 .DS_Store
 _site/*
+_site/feed.xml
+.DS_Store
+_site/feed.xml
+_site/index.html

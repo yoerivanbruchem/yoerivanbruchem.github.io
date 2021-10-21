@@ -1,85 +1,91 @@
-<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<div class="header">
+  
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+
+    <a class="navbar-brand p-3" href="#">Yoeri van Bruchem</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-menu-custom nav_menu_color" id="navbarCollapse">
+      <ul class="navbar-nav justify-content-menu-custom">
+        
+
         {% for item in site.data.navbar %}
-        <a class="nav-item nav-link" href="{{item.link}}">{{ item.name }}</a>
-        {% endfor %}  
-      </div>
-    </div>
-  </nav> -->
+        
+          {% if item.type == "standard" %}
+          <li class="nav-item {% if item.name == site.data.navbar.last.name %} last {% endif %} p-3"><a href="{{item.link}}">{{ item.name }}</a></li>
+          {% elsif item.type == "multimenu" %}
+          
+          <li class="nav-item {% if item.name == site.data.navbar.last.name %} last {% endif %} dropdown p-3">
+            
+            
+            <a href="{{item.link}}">{{ item.name }}</a>
+          
+          
+            <ul class="dropdown-menu">
 
-<div class="header">
-  <nav class="menu navbar navbar-expand-lg">
+              <div class="dropdown-menu-content">
+                <span><i class="fas fa-project-diagram"></i> <h5> {{ item.multimenu_title }} </h5></span>
+                <span><p> {{ item.multimenu_description }} </p></span>
 
+                <style>
 
+                 
+    
+                </style>
 
-    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <table>
+                  {% for multi_menu_item_category in item.multimenu_categories %}
+                  <tr> 
+                  
+                  <th>{{ multi_menu_item_category.name }}</th>
 
-      <a class="navbar-brand" href="#">Yoeri van Bruchem</a>
+                  {% for multi_menu_item_category_item in multi_menu_item_category.items%}
+                  <td><li><a class="dropdown-item" href="{{ multi_menu_item_category_item.link }}">{{ multi_menu_item_category_item.name }}</a></li> </td>
+                  {% endfor %}  
 
-      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>-->
+                </tr>   
+                {% endfor %}               
+                </table>
 
-      <ul class="nav justify-content-center">
-        {% for item in site.data.navbar %}
-        {% unless item.name == site.data.navbar.last.name %}
-        <li class="nav-item"><a href="{{item.link}}">{{ item.name }}</a></li>
-        {% else %}
-        <li class="nav-item last dropdown-toggle"><a href="{{item.link}}">{{ item.name }}</a>
-          <ul class="dropdown-menu">
+                
 
-            <div class="dropdown-menu-content">
+              </div>
 
-              <span><i class="fas fa-project-diagram"></i> <h5> Project Types </h5></span> 
-              <span><p>Navigate to different project types.</p></span>
+              {% if item.multimenu_footer == true %}
+              <div class="dropdown-footer"> 
+                <span>
+                  <i class="{{ item.multimenu_footer_content.icon }}"></i> <a href="{{ item.multimenu_footer_content.link }}" target="_blank"><p> {{ item.multimenu_footer_content.text }} </p></a>  
+                
+                </span>
+              </div>
 
-              <table>
+              {% endif %}
 
-                <tr> <th>Category 1</th> <th>Category 2</th> </tr>
-
-                <tr>
-                  <td><li><a class="dropdown-item" href="#"> Submenu item 1</a></li> </td>
-                  <td><li><a class="dropdown-item" href="#"> Submenu item 2 </a></li></td>
-                </tr>
-                <tr>  
-                  <td><li><a class="dropdown-item" href="#"> Submenu item 3 </a></li></td>
-                </tr>
-
-              </table>
-
-
-
-              
-              
-            </div>
-
-            <div class="dropdown-footer"> 
-              <span>
-                <i class="fab fa-github"></i> <a href=https://github.com><p> Checkout my Github account </p></a>  </div>
-              </span>
-
-
-          </ul>
-        </li>
-        {% endunless %}
+            </ul>
+          {% endif %}
         {% endfor %}
       </ul>
 
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-      </form>
+      
 
     </div>
 
+    <form class="form-inline my-2 my-lg-0 header_search_box">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>-->
+    </form>
+
   </nav>
+
+
+
+
+
+
 </div>
 
+<!--
 
 <div class="sticky_header header test" id="site_header">
   <nav class="menu navbar navbar-expand-lg">
@@ -88,9 +94,6 @@
 
       <a class="navbar-brand" href="#">Yoeri van Bruchem</a>
 
-      <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>-->
 
       <ul class="nav justify-content-center">
         {% for item in site.data.navbar %}
@@ -127,7 +130,7 @@
 
             <div class="dropdown-footer"> 
               <span>
-                <i class="fab fa-github"></i> <a href=https://github.com><p> Checkout my Github account </p></a>  </div>
+                <i class="fab fa-github"></i> <a href="https://github.com/{{site.github_username}}" target="_blank"><p> Check out my Github account </p></a>  </div>
               </span>
 
 
@@ -139,7 +142,6 @@
 
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
       </form>
 
     </div>
@@ -147,23 +149,19 @@
 
   </nav>
 </div>
-
+-->
 <script>
 
-  // When the user scrolls the page, execute myFunction
   window.onscroll = function () { myFunction() };
 
-  // Get the header
   var header = document.getElementById("site_header");
 
-  // Get the offset position of the navbar
   var sticky = header.offsetTop + 600;
   console.log(sticky)
 
-  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
     if (window.pageYOffset > sticky) {
-      //if (document.documentElement.scrollTop > sticky) {
+  
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");

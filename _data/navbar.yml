@@ -1,7 +1,30 @@
 
 - name: Home
   link: /
-- name: About
+  type: standard
+- name: About me
   link: /about
+  type: multimenu
+  multimenu_title: About Me
+  multimenu_description: Everything about me
+  multimenu_categories:
+    - name: Education
+      items: 
+      - name: HAN
+        link: /education-han
+      - name: University
+        link: /education-university
+    - name: Courses
+      items:
+        - name: Coursera
+          link: /courses-coursera
+        - name: DataCamp
+          link: courses-datacamp
+  multimenu_footer: true
+  multimenu_footer_content:
+      text: Check out my GitHub account
+      link: https://github.com/yoerivanbruchem
+      icon: fab fa-github
 - name: Projects
   link: /projects
+  type: standard

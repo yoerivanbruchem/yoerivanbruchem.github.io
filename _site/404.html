@@ -6,49 +6,144 @@
 <meta charset="utf-8">
 <meta content="IE-edge, chrome=1" http-equiv="X-UA-Compatible">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Yoeri van Bruchem is a freelance Data Scientist who has been working professionally since 2020.">
 
-<title>Yoeri van Bruchem </title>
+
 <link rel="icon" type="image/x-icon" href="/favicon.ico ">
 <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/3367b8463b.js" crossorigin="anonymous"></script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Yoeri van Bruchem |  </title>
   </head>
   <body>
 
+    <div class="wrapper">
+      <div class="header">
+  
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
 
-    <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Logo</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <a class="navbar-brand p-3" href="#">Yoeri van Bruchem</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
+    <div class="collapse navbar-collapse justify-content-menu-custom nav_menu_color" id="navbarCollapse">
+      <ul class="navbar-nav justify-content-menu-custom">
         
-        <a class="nav-item nav-link" href="/">Home</a>
-        
-        <a class="nav-item nav-link" href="/about">About</a>
-        
-        <a class="nav-item nav-link" href="/projects">Projects</a>
-          
-      </div>
-    </div>
-  </nav> -->
 
-<div class="header">
+        
+        
+          
+          <li class="nav-item  p-3"><a href="/">Home</a></li>
+          
+        
+        
+          
+          
+          <li class="nav-item  dropdown p-3">
+            
+            
+            <a href="/about">About me</a>
+          
+          
+            <ul class="dropdown-menu">
+
+              <div class="dropdown-menu-content">
+                <span><i class="fas fa-project-diagram"></i> <h5> About Me </h5></span>
+                <span><p> Everything about me </p></span>
+
+                <style>
+
+                 
+    
+                </style>
+
+                <table>
+                  
+                  <tr> 
+                  
+                  <th>Education</th>
+
+                  
+                  <td><li><a class="dropdown-item" href="/education-han">HAN</a></li> </td>
+                  
+                  <td><li><a class="dropdown-item" href="/education-university">University</a></li> </td>
+                    
+
+                </tr>   
+                
+                  <tr> 
+                  
+                  <th>Courses</th>
+
+                  
+                  <td><li><a class="dropdown-item" href="/courses-coursera">Coursera</a></li> </td>
+                  
+                  <td><li><a class="dropdown-item" href="courses-datacamp">DataCamp</a></li> </td>
+                    
+
+                </tr>   
+                               
+                </table>
+
+                
+
+              </div>
+
+              
+              <div class="dropdown-footer"> 
+                <span>
+                  <i class="fab fa-github"></i> <a href="https://github.com/yoerivanbruchem" target="_blank"><p> Check out my GitHub account </p></a>  
+                
+                </span>
+              </div>
+
+              
+
+            </ul>
+          
+        
+        
+          
+          <li class="nav-item  last  p-3"><a href="/projects">Projects</a></li>
+          
+        
+      </ul>
+
+      
+
+    </div>
+
+    <form class="form-inline my-2 my-lg-0 header_search_box">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      <!-- <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>-->
+    </form>
+
+  </nav>
+
+
+
+
+
+
+</div>
+
+<!--
+
+<div class="sticky_header header test" id="site_header">
   <nav class="menu navbar navbar-expand-lg">
     
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <a class="navbar-brand" href="#">Yoeri van Bruchem</a>
+
+
       <ul class="nav justify-content-center">
         
         
@@ -56,55 +151,72 @@
         
         
         
-        <li class="nav-item"><a href="/about">About</a></li>
+        <li class="nav-item"><a href="/about">About me</a></li>
         
         
         
-        <li class="nav-item last"><a href="/projects">Projects</a></li>
+        <li class="nav-item last dropdown-toggle"><a href="/projects">Projects</a>
+          <ul class="dropdown-menu">
+
+            <div class="dropdown-menu-content">
+
+              <span><i class="fas fa-project-diagram"></i> <h5> Project Types </h5></span> 
+              <span><p>Navigate to different project types.</p></span>
+
+              <table>
+
+                <tr> <th>Category 1</th> <th>Category 2</th> </tr>
+
+                <tr>
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 1</a></li> </td>
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 2 </a></li></td>
+                </tr>
+                <tr>  
+                  <td><li><a class="dropdown-item" href="#"> Submenu item 3 </a></li></td>
+                </tr>
+
+              </table>
+
+
+
+              
+              
+            </div>
+
+            <div class="dropdown-footer"> 
+              <span>
+                <i class="fab fa-github"></i> <a href="https://github.com/yoerivanbruchem" target="_blank"><p> Check out my Github account </p></a>  </div>
+              </span>
+
+
+          </ul>
+        </li>
         
         
       </ul>
+
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search">
+      </form>
+
     </div>
-    
+
+
   </nav>
 </div>
-
-
-<div class="sticky_header header test" id="site_header">
-  <div class="menu">
-    <ul>
-      
-      
-      <li><a href="/">Home</a></li>
-      
-      
-      
-      <li><a href="/about">About</a></li>
-      
-      
-      
-      <li class="last"><a href="/projects">Projects</a></li>
-      
-      
-    </ul>
-  </div>
-</div>
-
+-->
 <script>
 
-  // When the user scrolls the page, execute myFunction
   window.onscroll = function () { myFunction() };
 
-  // Get the header
   var header = document.getElementById("site_header");
 
-  // Get the offset position of the navbar
   var sticky = header.offsetTop + 600;
   console.log(sticky)
 
-  // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
   function myFunction() {
     if (window.pageYOffset > sticky) {
+  
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");
@@ -112,7 +224,7 @@
   }
 
 </script>  
-    <style type="text/css" media="screen">
+      <style type="text/css" media="screen">
   .container {
     margin: 10px auto;
     max-width: 600px;
@@ -133,9 +245,15 @@
   <p>The requested page could not be found.</p>
 </div>
 
+    </div>
+
+    
 
     <script type="text/javascript" src="/assets/js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="/assets/js/functions.js"></script>
+
+
+
 
   </body>
 </html>
